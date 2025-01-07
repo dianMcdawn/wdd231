@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+:root {
+    --primary-color: #000000;
+    --secondary-color: #333333;
+    --thirdiary-color: #cccccc;
+
+    --heading-font: 'Open Sans';
+    --paragraph-font: 'Open Sans';
+
+    --primary-font-color: #000000;
+    --secondary-font-color: #7b7b7b;
+    --thirdiary-font-color: #4c4c4c;
+    --default-font-color: #ffffff;
+
+    --main-green: #0a7823;
+    --main-red: #990000;
+}
+
+* {
+    font-family: 'Open Sans';
+}
+
+body {
+    padding: 0 5% 0 5%;
+    margin: 0;
+}
+
+header {
+    background-color: var(--main-green);
+    color: var(--default-font-color);
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
+    align-items: center;
+}
+
+h1 {
+    grid-row: 1/2;
+    grid-column: 1/3;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 1rem 1rem;
+}
+
+.navbar {
+    grid-column: 1/3;
+}
+
+nav {
+    grid-row: 2/3;
+    grid-column: 1/3;
+    margin: 0;
+    padding: 0;
+    color: var(--default-font-color);
+}
+
+.navigation {
+    list-style: none;
+    margin: 0;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    color: var(--default-font-color);
+    padding: 1.2rem;
+    font-weight: 700;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+    text-align: center;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.navigation a:hover {
+    background-color: var(--thirdiary-font-color);
+    color: var(--thirdiary-color);
+}
+
+/* small view navigation */
+#menu {
+    display: block;
+    background-color: var(--primary-color);
+    color: var(--default-font-color);
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: right;
+    padding: 0;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+.show li {
+    display: block;
+}
+
+/* ******* */
+/* CLASSES */
+/* ******* */
+
+main {
+    margin: 1rem;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+/* Section 1 */
+main .section1 {
+    grid-row: 1/2;
+}
+
+main .card {
+    display: grid;
+    margin: 1rem;
+    grid-template-rows: auto 1fr;
+    padding: 0;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid var(--secondary-color);
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+}
+
+main .card h2 {
+    background: var(--main-green);
+    color: var(--default-font-color);
+    width: 100%;
+    text-align: left;
+    margin-top: 0;
+    padding: 1rem 0 1rem 0;
+    font-size: 1.4rem;
+    text-align: center;
+    border-radius: 1rem 1rem 0 0;
+    grid-row: 1/2;
+}
+
+main .card .text {
+    padding: 0.5rem 1.5rem;
+    text-align: justify;
+}
+
+/* Section 2 */
+main .section2 {
+    grid-row: 2/3;
+}
+
+main .card2 {
+    display: grid;
+    margin: 1rem;
+    grid-template-rows: auto 1fr;
+    padding-bottom: 1rem;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid var(--secondary-color);
+    border-radius: 1rem;
+}
+
+main .card2 h2 {
+    background: var(--main-green);
+    color: var(--default-font-color);
+    width: 100%;
+    text-align: left;
+    margin-top: 0;
+    padding: 1rem 0 1rem 0;
+    font-size: 1.4rem;
+    text-align: center;
+    border-radius: 1rem 1rem 0 0;
+    grid-row: 1/2;
+}
+
+main .card2 .image1 {
+    height: 200px;
+    width: auto;
+    padding: 1rem;
+}
+
+/* Section 3 */
+main .section3 {
+    grid-row: 3/4;
+}
+
+main .card3 {
+    display: grid;
+    margin: 1rem;
+    grid-template-rows: auto 1fr;
+    padding-bottom: 1rem;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid var(--secondary-color);
+    border-radius: 1rem;
+}
+
+main .card3 h2 {
+    background: var(--main-green);
+    color: var(--default-font-color);
+    width: 100%;
+    text-align: left;
+    margin-top: 0;
+    padding: 1rem 0 1rem 0;
+    font-size: 1.4rem;
+    text-align: center;
+    border-radius: 1rem 1rem 0 0;
+    grid-row: 1/2;
+}
+
+main .card3 .part1 {
+    width: 100%;
+    border-top: 0.5px solid var(--secondary-color);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+main .card3 .part1 button{
+    width: 30%;
+    padding: 0.5rem 0;
+    background-color: var(--primary-font-color);;
+    color: #fff;
+    border-color: transparent;
+    border-radius: 0.5rem;
+}
+
+main .card3 .part1 button:hover{
+    cursor: pointer;
+    background-color: var(--thirdiary-font-color);
+}
+
+main .card3 .part2 {
+    width: 100%;
+    border-top: 0.5px solid var(--secondary-color);
+    padding: 1rem 0;
+}
+
+main .card3 .part2 .button-aprov{
+    width: 90%;
+    padding: 0.8rem;
+    margin: 0.5rem 5%;
+    background-color: var(--main-green);;
+    color: #fff;
+    border-color: transparent;
+    border-radius: 0.5rem;
+}
+
+main .card3 .part2 .button-aprov:hover{
+    cursor: pointer;
+    background-color: var(--thirdiary-font-color);
+}
+
+main .card3 .part2 .button-pend{
+    width: 90%;
+    padding: 0.8rem;
+    margin: 0.5rem 5%;
+    background-color: var(--secondary-font-color);
+    color: var(--primary-font-color);
+    border-color: transparent;
+    border-radius: 0.5rem;
+}
+
+main .card3 .part2 .button-pend:hover{
+    cursor: pointer;
+    color: var(--default-font-color);
+    background-color: var(--thirdiary-font-color);
+}
+
+main .card3 .part3 {
+    width: 100%;
+    text-align: center;
+}
+/* FOOTER */
+
+footer {
+    background: var(--secondary-color);
+    color: var(--default-font-color);
+    grid-row: 3/4;
+    grid-column: 1/3;
+}
+
+footer P {
+    padding: 2rem;
+    order: 1;
+    font-size: 1rem;
+    text-align: center;
+}
