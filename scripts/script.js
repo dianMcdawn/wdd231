@@ -57,8 +57,8 @@ const classes = [
 //Function to give a design to the class card
 function classButton(classes) {
 	let button = "";
-	if(classes.completed == true){button = `<button class="button-aprov">${classes.className}</button>`;}
-	else if(classes.completed == false){button = `<button class="button-pend">${classes.className}</button>`;}
+	if(classes.completed == true){button = `<button class="button-aprov" title="Completed">${classes.className}</button>`;}
+	else if(classes.completed == false){button = `<button class="button-pend" title="Pending">${classes.className}</button>`;}
 	return button;
 }
 
