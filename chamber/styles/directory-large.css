@@ -1,9 +1,14 @@
-@media screen and (min-width: 800px){
+@media screen and (min-width: 850px){
     body {
         padding: 0 15% 0 15%;
         margin: 0;
     }
     /* ************************************ */
+    .navbar {
+        flex-flow: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
     .navigation {
 		display: flex;
         justify-content: flex-end;
@@ -15,9 +20,6 @@
 	.navigation a {
 		text-align: center;
 	}
-    .navbar {
-        grid-row: 2/3;
-    }
 	#menu {
 		display: none;
 	}
@@ -26,11 +28,6 @@
         display: grid;
         grid-template-rows: auto auto;
         grid-template-columns: 2fr 1fr 1fr;
-    }
-    .business{
-        display: grid;
-        grid-template-rows: auto auto;
-        grid-template-columns: auto auto auto;
     }
     /* ************************************ */
     footer {

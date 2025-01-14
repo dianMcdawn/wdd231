@@ -1,0 +1,75 @@
+{
+    "members":
+        [
+            {
+                "name": "Flynn Hines",
+                "address": "1905 Grant View Drive, New Berlin, WI",
+                "phone": "1-730-349-3040",
+                "websiteurl": "flyn.com",
+                "imageurl": "images/flynn-hines.jpeg",
+                "membershiplevel": 1,
+                "birthdaydate": "06/01/1987",
+                "active": true
+            },
+            {
+                "name": "Chelsey Ayers",
+                "address": "4546 Pritchard Court, Owatonna, MN",
+                "phone": "377-596-7876",
+                "websiteurl": "chelsey.com",
+                "imageurl": "images/chelsey-ayers.jpeg",
+                "membershiplevel": 1,
+                "birthdaydate": "07/15/1991",
+                "active": true
+            },
+            {
+                "name": "Ioan Carrillo",
+                "address": "3479 Irish Lane, Madison, WI",
+                "phone": "436-279-4173",
+                "websiteurl": "ioan.com",
+                "imageurl": "images/ioan-carrillo.jpeg",
+                "membershiplevel": 2,
+                "birthdaydate": "05/04/1990",
+                "active": true
+            },
+            {
+                "name": "Jaden Hampton",
+                "address": "2392 Woodside Circle, Glendale, FL",
+                "phone": "(710) 645-5519",
+                "websiteurl": "jaden.com",
+                "imageurl": "images/jaden-hampton.jpeg",
+                "membershiplevel": 1,
+                "birthdaydate": "11/11/1995",
+                "active": true
+            },
+            {
+                "name": "Bartosz Brandt",
+                "address": "4463 Massachusetts Avenue, Washington, DC",
+                "phone": "(347) 250-8703",
+                "websiteurl": "bartosz.com",
+                "imageurl": "images/bartosz-brandt.jpeg",
+                "membershiplevel": 1,
+                "birthdaydate": "10/21/1988",
+                "active": true
+            },
+            {
+                "name": "Ezekiel Hoffman",
+                "address": "2665 Crosswind Drive, Madisonville, KY",
+                "phone": "888-597-2487",
+                "websiteurl": "ezekiel.com",
+                "imageurl": "images/ezekiel-hoffman.jpeg",
+                "membershiplevel": 1,
+                "birthdaydate": "01/29/1992",
+                "active": false
+            },
+            {
+                "name": "Malik Carey",
+                "address": "2649 Jehovah Drive, Waynesboro, VA",
+                "phone": "(661) 654-4607",
+                "websiteurl": "malik.com",
+                "imageurl": "images/malik-carey.jpeg",
+                "membershiplevel": 1,
+                "birthdaydate": "12/16/1988",
+                "active": false
+            }
+        ]
+}
