@@ -1,0 +1,29 @@
+{
+    "family-name": "family",
+    "date-moved": "25-01-2020",
+    "quantity": 4,
+    "visited-bishopric": false,
+    "members":[
+        {
+            "name": "father",
+            "gender": "male",
+            "birthdate": "26-12-1987"
+        },
+        {
+            "name": "mother",
+            "gender": "female",
+            "birthdate": "30-06-1993"
+        },
+        {
+            "name": "daughter",
+            "gender": "female",
+            "birthdate": "22-09-2025"
+        },
+        {
+            "name": "son",
+            "gender": "male",
+            "birthdate": "30-04-2027"
+        }
+    ]
+
+}
