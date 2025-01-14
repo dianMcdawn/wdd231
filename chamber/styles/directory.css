@@ -109,7 +109,7 @@ nav {
     text-decoration: none;
     text-align: right;
     padding: 0 1rem 0 0;
-    cursor: pinter;
+    cursor: pointer;
 }
 
 #menu::before {
@@ -139,7 +139,7 @@ nav {
 
 .hero {
     position: relative;
-    background-image: url("/images/hero.webp");
+    background-image: url("../images/hero-main.webp");
     background-repeat: no-repeat;
     background-size: cover;
     height: 40vh;
