@@ -8,6 +8,7 @@
     <meta name="author" content="Patricio Henriquez">
     <title>WDD 231 | Basic Layout</title>
     <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/directory-large.css">
 
     <!--  Essential META Tags - Open Graph protocol -->
     <meta property="og:title" content="WDD231 | Chamber">
@@ -18,7 +19,7 @@
 
     <!--  Non-Essential, But Recommended -->
     <meta property="og:description" content="Improving desings">
-    <meta property="og:site_name" content="WDD231 | Web Frontend Development I">
+    <meta property="og:site_name" content="WDD231 | Chamber">
     <meta name="twitter:image:alt" content="Chile Flag">
 
     <!--  Non-Essential, But Required for Analytics -->
@@ -38,8 +39,9 @@
 <body>
     <header>
         <!--<img src="images/phm.jpg">-->
-        <img src="images/phm.jpg" alt="PHM">
-        <h1>WDD231 | Chamber Directory</h1>
+        <img src="../images/phm.jpg" alt="PHM">
+        <h1>WDD231</h1>
+        <h2>Chamber Directory</h2>
         <div class="navbar">
             <a id="menu" href="#"></a>
             <nav>
@@ -54,11 +56,93 @@
         </div>
     </header>
     <main>
-        
+        <section class="hero">
+            <div class="button">Keynote Tickets</div>
+        </section>
+        <section class="home">
+            <h2>Home</h2>
+            <div class="home-section">
+                <h3>Events</h3>
+            </div>
+            <div class="home-section">
+                <h3>Current Weather</h3>
+                <div class="weather-info">
+                    <img src="" alt="weat-symb">
+                    <div class="weather-info-data">
+                        <p>75º F</p>
+                        <p>Party Cloudy</p>
+                        <p>High: 85º</p>
+                        <p>Low: 52º</p>
+                        <p>Humidity: 34%</p>
+                        <p>Sunrise: 7:30am</p>
+                        <p>Sunset: 9:59pm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="home-section">
+                <h3>Weather Forecast</h3>
+                <div class="forecast-info">
+                    <p>Today: <span>90ºF</span></p>
+                    <p>Wednesday: <span>89ºF</span></p>
+                    <p>Thursday: <span>68ºF</span></p>
+                </div>
+            </div>
+        </section>
+        <section class="business">
+            <div class="business-section">
+                <h3>Business Name</h3>
+                <p>Business Tag Line</p>
+                <hr>
+                <div class="business-info">
+                    <img src="" alt="logo">
+                    <p><span>Email:</span> info@email.com</p>
+                    <p><span>PHONE:</span> 800-555-1234</p>
+                    <p><span>URL:</span> mybusiness.com</p>
+                </div>
+            </div>
+            <div class="business-section">
+                <h3>Business Name</h3>
+                <p>Business Tag Line</p>
+                <hr>
+                <div class="business-info">
+                    <img src="" alt="logo">
+                    <p><span>Email:</span> info@email.com</p>
+                    <p><span>PHONE:</span> 800-555-1234</p>
+                    <p><span>URL:</span> mybusiness.com</p>
+                </div>
+            </div>
+            <div class="business-section">
+                <h3>Business Name</h3>
+                <p>Business Tag Line</p>
+                <hr>
+                <div class="business-info">
+                    <img src="" alt="logo">
+                    <p><span>Email:</span> info@email.com</p>
+                    <p><span>PHONE:</span> 800-555-1234</p>
+                    <p><span>URL:</span> mybusiness.com</p>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-        <p>@<span id="currentyear"></span> 🐠 Talcahuano, Chile 🐠 | 🦆 Patricio Henriquez 🦆</p>
-        <p>Last Modification <span id="lastModified"></span></p>
+        <div class="foot-section">
+            <p>Chamber of Commerce</p>
+            <p>10 rue De La Paix</p>
+            <p>Timbuku, Mali 999</p>
+            <p>info@email.com</p>
+            <p>(223) 555-2300</p>
+        </div>
+        <div class="foot-section socialmedias">
+            <div class="social-media"><img src="images/facebook.svg" alt="facebook"></div>
+            <div class="social-media"><img src="images/instagram.svg" alt="instagram"></div>
+            <div class="social-media"><img src="images/linkedin.svg" alt="linkedin"></div>
+        </div>
+        <div class="foot-section">
+            <p>WDD231 Class Project</p>
+            <p>Patricio Henriquez</p>
+            <p>@<span id="currentyear"></span> Chamber of Commerce</p>
+            <p>Last Modification <span id="lastModified"></span></p>
+        </div>
     </footer>
 </body>
 
