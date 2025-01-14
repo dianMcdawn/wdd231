@@ -12,7 +12,7 @@ hambutton.addEventListener('click', () => {
 
 //Fetching JSON to be displayed
 const url = 'data/members.json';
-const cards = document.querySelector('#business');
+const cards = document.querySelector('#members');
 
 async function getMemberData() {
 	const response = await fetch(url);
@@ -73,7 +73,7 @@ const displayMembers = (members) => {
 //Grid to List buttons action
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
-const display = document.querySelector("#business");
+const display = document.querySelector("#members");
 
 // The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
 

@@ -144,6 +144,14 @@ nav {
     height: 40vh;
 }
 
+.hero h2{
+    color: var(--default-font-color);
+    padding-top: 17vh;
+    text-align: center;
+    text-shadow: 1px 1px 5px #000;
+    font-size: 3rem;
+}
+
 .hero .button {
     position: absolute;
     bottom: 1rem;
@@ -224,6 +232,9 @@ nav {
     cursor: pointer;
 }
 
+/* Members */
+
+
 /* Grid */
 
 .grid{
@@ -232,6 +243,12 @@ nav {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: center;
     gap: 1rem;
+}
+
+.grid h2 {
+    font-weight: bold;
+    grid-column: 1/-1;
+    text-align: center;
 }
 
 .grid .member-section{
@@ -284,7 +301,7 @@ nav {
 
 .list .member-section {
 	display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 0 1rem;
 	margin: 0;
 	padding: 0.25rem;

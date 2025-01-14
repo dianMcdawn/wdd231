@@ -29,6 +29,13 @@
         grid-template-rows: auto auto;
         grid-template-columns: 2fr 1fr 1fr;
     }
+    .list .member-section {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 0 1rem;
+        margin: 0;
+        padding: 0.25rem;
+    }
     /* ************************************ */
     footer {
         display: grid;
