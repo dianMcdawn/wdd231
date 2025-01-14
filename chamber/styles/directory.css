@@ -300,6 +300,12 @@ nav {
     flex-direction: column;
 }
 
+.list h2 {
+    font-weight: bold;
+    grid-column: 1/-1;
+    text-align: center;
+}
+
 .list .member-section {
 	display: grid;
     grid-template-columns: repeat(4, 1fr);

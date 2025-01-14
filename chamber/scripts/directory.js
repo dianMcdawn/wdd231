@@ -73,6 +73,7 @@ const displayMembers = (members) => {
 //Grid to List buttons action
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
+const section = document.querySelector("#section-title");
 const display = document.querySelector("#members");
 
 // The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
@@ -81,11 +82,13 @@ gridbutton.addEventListener("click", () => {
 	// example using arrow function
 	display.classList.add("grid");
 	display.classList.remove("list");
+	section.textContent = "Members Cards";
 });
 
-listbutton.addEventListener("click", showList); // example using defined function
+listbutton.addEventListener("click", showList);
 
 function showList() {
 	display.classList.add("list");
 	display.classList.remove("grid");
+	section.textContent = "Members List";
 }
