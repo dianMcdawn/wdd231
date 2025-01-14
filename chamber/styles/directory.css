@@ -139,7 +139,7 @@ nav {
 
 .hero {
     position: relative;
-    background-image: url("https://newsroom.churchofjesuschrist.org/media/960x540/Billboard-Saratoga-Springs-1.jpg");
+    background-image: url("/images/hero.webp");
     background-repeat: no-repeat;
     background-size: cover;
     height: 40vh;
