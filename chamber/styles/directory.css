@@ -136,18 +136,21 @@ nav {
 /* MAIN */
 
 /* hero image */
-
 .hero {
     position: relative;
-    background-image: url("../images/hero-main.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 40vh;
+}
+
+.hero img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
 }
 
 .hero h2{
+    position: absolute;
+    width: 100%;
+    top: 30%;
     color: var(--default-font-color);
-    padding-top: 17vh;
     text-align: center;
     text-shadow: 1px 1px 5px #000;
     font-size: 3rem;
