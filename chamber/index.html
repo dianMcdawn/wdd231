@@ -12,7 +12,7 @@
 
     <!--  Essential META Tags - Open Graph protocol -->
     <meta property="og:title" content="WDD231 | Chamber">
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="website">
     <meta property="og:image" content="https://dianmcdawn.github.io/wdd231/images/chile.png">
     <meta property="og:url" content="https://dianmcdawn.github.io/wdd231/chamber/directory.html">
     <meta name="twitter:card" content="summary_large_image">
@@ -28,8 +28,9 @@
 
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico">
-    <script src="scripts/directory.js" defer></script>
-    <script src="../scripts/getdates.js" defer></script>
+    <script src="scripts/weather.js" type="module"></script>
+    <script src="scripts/location.js" type="module"></script>
+    <script src="scripts/getdates.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,17 +40,17 @@
 <body>
     <header>
         <!--<img src="images/phm.jpg">-->
-        <img src="../images/phm.jpg" alt="PHM">
+        <img src="images/logo.webp" alt="duck.logo">
         <div clas="main-title">
             <h1>WDD231</h1>
-            <h2>Chamber Directory</h2>
+            <h2>Duck Chamber Directory</h2>
         </div>
         <div class="navbar">
             <a id="menu" href="#"></a>
             <nav>
                 <ul class="navigation">
                     <li><a href="index.html" id="home">Home</a></li>
-                    <li><a href="#" id="directory">Directory</a></li>
+                    <li><a href="directory.html" id="directory">Directory</a></li>
                     <li><a href="#" id="join">Join</a></li>
                     <li><a href="#" id="discover">Discover</a></li>
                 </ul>
@@ -59,6 +60,7 @@
     </header>
     <main>
         <section class="hero">
+            <h2>Home</h2>
             <div class="button">Keynote Tickets</div>
         </section>
         <section class="home">
@@ -66,28 +68,12 @@
             <div class="home-section">
                 <h3>Events</h3>
             </div>
-            <div class="home-section">
+            <input id="long" type="text"><input id="lat" type="text">
+            <div id="current-weather" class="home-section">
                 <h3>Current Weather</h3>
-                <div class="weather-info">
-                    <img src="" alt="weat-symb">
-                    <div class="weather-info-data">
-                        <p>75º F</p>
-                        <p>Party Cloudy</p>
-                        <p>High: 85º</p>
-                        <p>Low: 52º</p>
-                        <p>Humidity: 34%</p>
-                        <p>Sunrise: 7:30am</p>
-                        <p>Sunset: 9:59pm</p>
-                    </div>
-                </div>
             </div>
-            <div class="home-section">
+            <div id="forecast-weather" class="home-section">
                 <h3>Weather Forecast</h3>
-                <div class="forecast-info">
-                    <p>Today: <span>90ºF</span></p>
-                    <p>Wednesday: <span>89ºF</span></p>
-                    <p>Thursday: <span>68ºF</span></p>
-                </div>
             </div>
         </section>
         <section class="business">
@@ -95,34 +81,28 @@
                 <h3>Business Name</h3>
                 <p>Business Tag Line</p>
                 <hr>
-                <div class="business-info">
-                    <img src="" alt="logo">
-                    <p><span>Email:</span> info@email.com</p>
-                    <p><span>PHONE:</span> 800-555-1234</p>
-                    <p><span>URL:</span> mybusiness.com</p>
-                </div>
+                <img src="images/generic-logo.webp" alt="logo">
+                <p><span>Email:</span> info@email.com</p>
+                <p><span>PHONE:</span> 800-555-1234</p>
+                <p><span>URL:</span> mybusiness.com</p>
             </div>
             <div class="business-section">
                 <h3>Business Name</h3>
                 <p>Business Tag Line</p>
                 <hr>
-                <div class="business-info">
-                    <img src="" alt="logo">
-                    <p><span>Email:</span> info@email.com</p>
-                    <p><span>PHONE:</span> 800-555-1234</p>
-                    <p><span>URL:</span> mybusiness.com</p>
-                </div>
+                <img src="images/generic-logo.webp" alt="logo">
+                <p><span>Email:</span> info@email.com</p>
+                <p><span>PHONE:</span> 800-555-1234</p>
+                <p><span>URL:</span> mybusiness.com</p>
             </div>
             <div class="business-section">
                 <h3>Business Name</h3>
                 <p>Business Tag Line</p>
                 <hr>
-                <div class="business-info">
-                    <img src="" alt="logo">
-                    <p><span>Email:</span> info@email.com</p>
-                    <p><span>PHONE:</span> 800-555-1234</p>
-                    <p><span>URL:</span> mybusiness.com</p>
-                </div>
+                <img src="images/generic-logo.webp" alt="logo">
+                <p><span>Email:</span> info@email.com</p>
+                <p><span>PHONE:</span> 800-555-1234</p>
+                <p><span>URL:</span> mybusiness.com</p>
             </div>
         </section>
     </main>
