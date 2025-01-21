@@ -41,6 +41,10 @@
     .home .home-section .weather-info .weather-info-data {
         grid-column: 2/3;
     }
+    .hero img{
+        height: 400px;
+    }
+    
     .list .member-section {
         display: grid;
         grid-template-columns: repeat(7, 1fr);
