@@ -28,8 +28,10 @@
 
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico">
+    <script src="scripts/directory.js" defer></script>
     <script src="scripts/weather.js" type="module"></script>
     <script src="scripts/location.js" type="module"></script>
+    <script src="scripts/members-random.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,14 +63,14 @@
     <main>
         <section class="hero">
             <h2>Home</h2>
-            <div class="button">Keynote Tickets</div>
+            <a href="#" class="button">IT'S TIME TO JOIN US</a>
         </section>
+         <input id="long" type="hidden"><input id="lat" type="hidden">
         <section class="home">
             <h2>Home</h2>
             <div class="home-section">
                 <h3>Events</h3>
             </div>
-            <input id="long" type="text"><input id="lat" type="text">
             <div id="current-weather" class="home-section">
                 <h3>Current Weather</h3>
             </div>
@@ -104,6 +106,9 @@
                 <p><span>PHONE:</span> 800-555-1234</p>
                 <p><span>URL:</span> mybusiness.com</p>
             </div>
+        </section>
+        <section id="members" class="grid">
+            <h2 id="section-title">Members Cards</h2>
         </section>
     </main>
     <footer>

@@ -6,9 +6,11 @@
                 "address": "1905 Grant View Drive, New Berlin, WI",
                 "phone": "1-730-349-3040",
                 "websiteurl": "flyn.com",
-                "imageurl": "images/flynn-hines.webp",
-                "membershiplevel": 1,
+                "imageurl": "images/members/flynn-hines.webp",
+                "membershiplevel": 3,
                 "birthdaydate": "06/01/1987",
+                "companyname": "Apple inc.",
+                "companylogo": "images/company-logos/apple.svg",
                 "active": true
             },
             {
@@ -16,9 +18,11 @@
                 "address": "4546 Pritchard Court, Owatonna, MN",
                 "phone": "377-596-7876",
                 "websiteurl": "chelsey.com",
-                "imageurl": "images/chelsey-ayers.webp",
-                "membershiplevel": 1,
+                "imageurl": "images/members/chelsey-ayers.webp",
+                "membershiplevel": 3,
                 "birthdaydate": "07/15/1991",
+                "companyname": "BMW",
+                "companylogo": "images/company-logos/bmw.svg",
                 "active": true
             },
             {
@@ -26,9 +30,11 @@
                 "address": "3479 Irish Lane, Madison, WI",
                 "phone": "436-279-4173",
                 "websiteurl": "ioan.com",
-                "imageurl": "images/ioan-carrillo.webp",
+                "imageurl": "images/members/ioan-carrillo.webp",
                 "membershiplevel": 2,
                 "birthdaydate": "05/04/1990",
+                "companyname": "Facebook",
+                "companylogo": "images/company-logos/facebook.svg",
                 "active": true
             },
             {
@@ -36,9 +42,11 @@
                 "address": "2392 Woodside Circle, Glendale, FL",
                 "phone": "(710) 645-5519",
                 "websiteurl": "jaden.com",
-                "imageurl": "images/jaden-hampton.webp",
+                "imageurl": "images/members/jaden-hampton.webp",
                 "membershiplevel": 1,
                 "birthdaydate": "11/11/1995",
+                "companyname": "Google",
+                "companylogo": "images/company-logos/google.svg",
                 "active": true
             },
             {
@@ -46,9 +54,11 @@
                 "address": "4463 Massachusetts Avenue, Washington, DC",
                 "phone": "(347) 250-8703",
                 "websiteurl": "bartosz.com",
-                "imageurl": "images/bartosz-brandt.webp",
+                "imageurl": "images/members/bartosz-brandt.webp",
                 "membershiplevel": 1,
                 "birthdaydate": "10/21/1988",
+                "companyname": "McDonald's",
+                "companylogo": "images/company-logos/mcdonalds.svg",
                 "active": true
             },
             {
@@ -56,9 +66,11 @@
                 "address": "2665 Crosswind Drive, Madisonville, KY",
                 "phone": "888-597-2487",
                 "websiteurl": "ezekiel.com",
-                "imageurl": "images/ezekiel-hoffman.webp",
-                "membershiplevel": 1,
+                "imageurl": "images/members/ezekiel-hoffman.webp",
+                "membershiplevel": 2,
                 "birthdaydate": "01/29/1992",
+                "companyname": "Messenger",
+                "companylogo": "images/company-logos/messenger.svg",
                 "active": false
             },
             {
@@ -66,9 +78,11 @@
                 "address": "2649 Jehovah Drive, Waynesboro, VA",
                 "phone": "(661) 654-4607",
                 "websiteurl": "malik.com",
-                "imageurl": "images/malik-carey.webp",
+                "imageurl": "images/members/malik-carey.webp",
                 "membershiplevel": 1,
                 "birthdaydate": "12/16/1988",
+                "companyname": "Nashville Predators",
+                "companylogo": "images/company-logos/nashville-predators.svg",
                 "active": false
             }
         ]
