@@ -7,6 +7,7 @@
 
 let latitud = "-33.0061792"; //document.getElementById('lat').value;
 let longitud = "-71.2589016" //document.getElementById('long').value;
+const eventWeather = document.querySelector('#event-weather');
 const currentWeather = document.querySelector('#current-weather');
 const forecastWeather = document.querySelector('#forecast-weather');
 const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -83,6 +84,7 @@ async function getForecastWeatherData() {
     const data = await response.json();
     console.table(data);
     displayForecastWeather(data);
+    displayEventWeather(data);
 }
 
 getForecastWeatherData();
@@ -115,4 +117,28 @@ function displayForecastWeather(data) {
         }
     }
     forecastWeather.appendChild(card);
+}
+
+function displayEventWeather(data) {
+    // Creating main card
+    let card = document.createElement('div');
+    card.classList.add("event-info");
+
+    //For that will loop 4 times
+    for (var i = 0; i < 4; i++) {
+        //New p tag element
+        let eventTime = document.createElement('p');
+        eventTime.classList.add("event-info-title");
+        let eventDesc = document.createElement('p');
+        eventDesc.classList.add("event-info-data");
+        //Manipulation of datetime
+        let timestamp = new Date(data.list[i].dt * 1000);
+        eventTime.textContent = `${timestamp}`;
+        eventDesc.textContent = `${Math.floor(data.list[i].main.temp)}ºC - ${data.list[i].weather[0].description.toUpperCase()}`;
+
+        // Appending sections
+        card.appendChild(eventTime);
+        card.appendChild(eventDesc);
+    }
+    eventWeather.appendChild(card);
 }
