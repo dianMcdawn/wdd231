@@ -200,12 +200,12 @@ nav {
     color: var(--secondary-font-color);
     width: calc(100% - 1rem); /*Calculation automated to adjust width*/
     margin: 0;
-    padding-left: 1rem;
+    padding: 0.5rem 0 0.5rem 1rem;
 }
 
 .home .home-section .event-info {
     margin: 0;
-    padding: 0;
+    padding: 0 1rem;
 }
 
 .home .home-section .event-info-data {
@@ -213,19 +213,20 @@ nav {
 }
 
 .home .home-section .weather-info {
-    display: grid;
-    grid-template-columns: auto auto;
+    min-width: 80%;
+    padding: 1rem;
 }
 
 .home .home-section .weather-info img {
-    grid-column: 1/2;
+    max-width: 6rem;
 }
 
 .home .home-section .weather-info .weather-info-data {
-    grid-column: 2/3;
+    padding: 0;
 }
 
 .home .home-section .forecast-info{
+    min-width: 80%;
     margin: 0;
     display: flex;
     align-items: flex-start;
