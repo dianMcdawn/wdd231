@@ -393,6 +393,90 @@ nav {
     display: none;
 }
 
+/* Form */
+
+.form-section{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+form {
+    background-color: var(--thirdiary-color);
+    padding: .5rem;
+    border-radius: .5rem;
+    max-width: 400px;
+}
+
+.form-element{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    padding: .7rem;
+}
+
+.form-element .title-label{
+    font-weight: bold;
+    padding-bottom: .3rem;
+}
+
+.form-radio{
+    display: grid;
+    width: 100%;
+    justify-content: space-around;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.radio-item{
+    display: grid;
+    text-align:center;
+}
+
+.check-apply{
+    font-style: italic;
+}
+
+.optional{
+    font-weight: normal;
+    color: var(--thirdiary-font-color);
+}
+
+/* Form elements */
+
+form select {
+    padding: .3rem .1rem;
+    border-color: transparent;
+}
+
+form input {
+    padding: .3rem .1rem;
+    border-color: transparent;
+}
+
+form input[type="radio"]{
+    transform: scale(1.5);
+}
+
+form input[type="checkbox"]{
+    transform: scale(1.5);
+    border-radius: 0;
+}
+
+form textarea {
+    padding: .3rem .1rem;
+    border-color: transparent;
+    min-height: 100px;
+}
+
+form button {
+    width: 100%;
+    padding: .5rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+form button:hover {
+    cursor: pointer;
+}
 
 /* FOOTER */
 

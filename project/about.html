@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="WDD 131 | Project">
+    <meta name="author" content="Patricio Henriquez">
+    <title>P.A.H.M. Tech - Digital solutions</title>
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="stylesheet" href="styles/siteplan-large.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <script src="scripts/getdates.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>P.A.H.M. Tech - Digital Solutions</h1>
+        <h2 >Transform your needs into digital solutions; Web Programming and Design, Hosting, DataBases and more</h2>
+        <a id="menu" href="#"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About me</a></li>
+                <li><a href="https://www.linkedin.com/in/patricio-a-henriquez-66701a214/" target="_blank">LinkedIn</a></li>
+                <li><a href="siteplan.html">My Site Plan</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-image">
+            <h2>About me</h2>
+            <picture>
+                <source srcset="images/hero-large.webp" media="min-width: 1000px">
+                <source srcset="images/hero-medium.webp" media="min-width: 750px">
+                <img src="images/hero-small.webp" alt="Technology" width="500" height="250">
+            </picture>
+        </div>
+        <div class="about-me">
+            <div class="left-section">
+                <p> My name is Patricio, but people call me Pato. I was born in <a href="https://en.wikipedia.org/wiki/Talcahuano" target="_blank">Talcahuano</a>, Chile, and i have 
+                    lived in many places over my country. I am currently working as IT Manager and i'm the main <a href="https://en.wikipedia.org/wiki/Programmer" target="_blank">programmer</a> of the company.
+                    I'm married and I love spend my free time with my wife, playing video games o enjoying a good day walk.
+                </p>
+                <p>For more than 10 year I have been working on web site project, from simple web pages to more complex web system that could control almost every aspect of a company.</p>
+            </div>
+            <div class="right-section">
+                <img src="images/phm.jpg" alt="My photo" loading="lazy">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>@<span id="currentyear"></span> 🐠 Talcahuano, Chile 🐠 | 🦆 Patricio Henriquez 🦆</p>
+        <p>Last Modification <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/siteplan.js" defer></script>
+    <script src="scripts/services.js" defer></script>
+</body>
+
+</html>

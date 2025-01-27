@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="WDD 131 | Project">
+    <meta name="author" content="Patricio Henriquez">
+    <title>P.A.H.M. Tech - Digital solutions</title>
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="stylesheet" href="styles/siteplan-large.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <script src="scripts/getdates.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>P.A.H.M. Tech - Digital Solutions</h1>
+        <h2>Transform your needs into digital solutions; Web Programming and Design, Hosting, DataBases and more</h2>
+        <a id="menu" href="#"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="https://www.linkedin.com/in/patricio-a-henriquez-66701a214/" target="_blank">LinkedIn</a></li>
+                <li><a href="siteplan.html">My Site Plan</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-image">
+            <h2>Find your Service!</h2>
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 750px)">
+                <img src="images/hero-small.webp" alt="Technology" width="500" height="250" loading="lazy">
+            </picture>
+        </div>
+        <div class="services-section">
+            <h2>My Services</h2>
+            <div class="services-filter">
+                <p id="all">All</p>
+                <p id="simples">Simples</p>
+                <p id="advanced">Advanced</p>
+                <p id="full">Full</p>
+            </div>
+            <div id="services" class="services"></div>
+        </div>
+        <div class="contact">
+            <h2>Contact me</h2>
+            <div class="contact-content">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d705.2134735761394!2d-67.0753856917469!3d-55.08265615236905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgoogle%20map%20html!5e0!3m2!1ses!2scl!4v1729520973057!5m2!1ses!2scl"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <form class="contact-form" action="sended.html" method="get">
+                <div class="form-element">
+                    <label for="name" class="title-label">Your Name: </label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-element">
+                    <label for="email" class="title-label">Your email: </label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-element">
+                    <label for="review" class="title-label">Write us a message</span>:
+                    </label>
+                    <textarea id="review" name="review"></textarea>
+                </div>
+                <div class="form-element">
+                 <label class="title-label">Wich services you are intereset in? <span
+                                class="check-apply">(Check all that apply)</span></label>
+        
+                    <label><input type="checkbox" id="check-dur" name="check-dur" value="1"> Web Design</label>
+                    <label><input type="checkbox" id="check-use" name="check-use" value="2"> Hosting</label>
+                    <label><input type="checkbox" id="check-per" name="check-per" value="3"> Data bases</label>
+                </div>
+                <div class="form-submit">
+                    <button type="submit">Send it to me!</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>@<span id="currentyear"></span> 🐠 Talcahuano, Chile 🐠 | 🦆 Patricio Henriquez 🦆</p>
+        <p>Last Modification <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/siteplan.js" defer></script>
+    <script src="scripts/services.js" defer></script>
+</body>
+
+</html>

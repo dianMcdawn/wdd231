@@ -62,58 +62,55 @@
     </header>
     <main>
         <section class="hero">
-            <h2>Home</h2>
-            <a href="#" class="button">IT'S TIME TO JOIN US</a>
+            <h2>JOIN</h2>
             <picture>
                 <source srcset="images/hero-main-1000.webp" media="(min-width: 1000px)">
                 <source srcset="images/hero-main-750.webp" media="(min-width: 750px)">
                 <img src="images/hero-main-500.webp" alt="Hero" width="500" height="250" loading="lazy">
             </picture>
         </section>
-         <input id="long" type="hidden"><input id="lat" type="hidden">
-        <section class="home">
-            <h2>Home</h2>
-            <div id="event-weather" class="home-section">
-                <h3>Events</h3>
-            </div>
-            <div id="current-weather" class="home-section">
-                <h3>Current Weather</h3>
-            </div>
-            <div id="forecast-weather" class="home-section">
-                <h3>Weather Forecast</h3>
-            </div>
-        </section>
-        <section class="business">
-            <div class="business-section">
-                <h3>Business Name</h3>
-                <p>Business Tag Line</p>
-                <hr>
-                <img src="images/generic-logo.webp" alt="logo">
-                <p><span>Email:</span> info@email.com</p>
-                <p><span>PHONE:</span> 800-555-1234</p>
-                <p><span>URL:</span> mybusiness.com</p>
-            </div>
-            <div class="business-section">
-                <h3>Business Name</h3>
-                <p>Business Tag Line</p>
-                <hr>
-                <img src="images/generic-logo.webp" alt="logo">
-                <p><span>Email:</span> info@email.com</p>
-                <p><span>PHONE:</span> 800-555-1234</p>
-                <p><span>URL:</span> mybusiness.com</p>
-            </div>
-            <div class="business-section">
-                <h3>Business Name</h3>
-                <p>Business Tag Line</p>
-                <hr>
-                <img src="images/generic-logo.webp" alt="logo">
-                <p><span>Email:</span> info@email.com</p>
-                <p><span>PHONE:</span> 800-555-1234</p>
-                <p><span>URL:</span> mybusiness.com</p>
-            </div>
-        </section>
-        <section id="members" class="grid">
-            <h2 id="section-title">Members Cards</h2>
+        <section class="form-section">
+            <form action="thankyou.html" method="get">
+                <div class="form-element">
+                    <label for="firstname" class="title-label">First name: </label>
+                    <input type="text" id="firstname" name="firstname" required>
+                </div>
+                <div class="form-element">
+                    <label for="lastname" class="title-label">Last name: </label>
+                    <input type="text" id="lastname" name="lastname" required>
+                </div>
+                <div class="form-element">
+                    <label for="organization" class="title-label">Organizational Title: </label>
+                    <input type="text" id="organization" name="organization" required>
+                </div>
+                <div class="form-element">
+                    <label for="email" class="title-label">email Address: </label>
+                    <input type="text" id="email" name="email" required>
+                </div>
+                <div class="form-element">
+                    <label for="phone" class="title-label">Mobile Phone Number: </label>
+                    <input type="text" id="phone" name="phone" required>
+                </div>
+                <div class="form-element">
+                    <label for="business" class="title-label">Business/Organization's Name: </label>
+                    <input type="text" id="business" name="business" required>
+                </div>
+                <div class="form-element">
+                    <label for="product" class="title-label">Membership Level: </label>
+                    <select id="product" name="product" required>
+                        <option value="" selected disabled>Your choosing...</option>
+                    </select>
+                </div>
+                <div class="form-element">
+                    <label for="review" class="title-label">Business/Organization Description <span class="optional">(Optional)</span>:
+                    </label>
+                    <textarea id="review" name="review"></textarea>
+                </div>
+                <input type="hidden" id="timestamp" name="timestamp">
+                <div class="form-submit">
+                    <button type="submit">Join Us!</button>
+                </div>
+            </form>
         </section>
     </main>
     <footer>

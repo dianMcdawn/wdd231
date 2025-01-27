@@ -12,7 +12,6 @@ const currentWeather = document.querySelector('#current-weather');
 const forecastWeather = document.querySelector('#forecast-weather');
 const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 let apiKey = "334ec37862e9d191d96a78311a94387f";
-let apiKey2 = "bf8367406b96ee36c06ed4dbd5da4714";
 
 //Current Weather
 let currentWeatherUrl = "https://api.openweathermap.org/data/2.5/weather?lat=" + latitud + "&lon=" + longitud + "&appid=" + apiKey + "&units=metric";
