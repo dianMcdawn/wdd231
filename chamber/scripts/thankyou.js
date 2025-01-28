@@ -17,15 +17,18 @@ function showFormData(search){
     formParams.forEach((param) => {
         if (param.startsWith(search)){
             result=param.split('=')[1].replace("%40","@");
+            result=result.replace("+"," ");
+            result=result.replace("%3A",":");
+            result=result.replace("%3A",":");
         }
     })
     return(result);
 }
 let memberlevel = '';
-if(showFormData("membership") == 0) {memberlevel = 'NP';}
-if(showFormData("membership") == 1) {memberlevel = 'Bronze';}
-if(showFormData("membership") == 2) {memberlevel = 'Silver';}
-if(showFormData("membership") == 3) {memberlevel = 'Gold';}
+if(showFormData("memberlevel") == 0) {memberlevel = 'NP';}
+if(showFormData("memberlevel") == 1) {memberlevel = 'Bronze';}
+if(showFormData("memberlevel") == 2) {memberlevel = 'Silver';}
+if(showFormData("memberlevel") == 3) {memberlevel = 'Gold';}
 
 let resultHTML = `
 <p>Thank you ${showFormData("firstname")} ${showFormData("lastname")}, we received your submition on ${showFormData("timestamp")} we will send you to your email ${showFormData("email")} all the information about your ${memberlevel} membership.
