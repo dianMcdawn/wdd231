@@ -600,7 +600,7 @@ form button:hover {
 .gridMemb .membership-section .membership-link{
     text-decoration: none;
     color: var(--default-font-color);
-    background-color: var(--secondary-font-color);
+    background-color: var(--main-green);
     text-align: center;
     border-radius: 4px;
     padding: .6rem 0;
@@ -608,7 +608,7 @@ form button:hover {
 .gridMemb .membership-section .membership-link:hover{
     text-decoration: none;
     color: var(--default-font-color);
-    background-color: var(--secondary-color);
+    background-color: var(--main-darkgreen);
     cursor: pointer;
 }
 
