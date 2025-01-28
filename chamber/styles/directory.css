@@ -476,6 +476,8 @@ nav {
     display: flex;
     width: 100%;
     justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 form {
@@ -630,7 +632,7 @@ form button:hover {
 
 /* DIALOG */
 .gridMemb dialog {
-    border: 1pc solid rgb(000 / 0.1);
+    border: 1pc solid rgb(0 0 0 / 0.1);
     border-radius: .25rem;
     padding: 1rem;
     background-color: #fff;
@@ -646,7 +648,7 @@ form button:hover {
     top: 35px;
     right: 23px;
     padding: .5rem 1rem;
-    border: 1px solid rgb ( 0 0 0 / 0.1);
+    border: 1px solid rgb( 0 0 0 / 0.1);
 }
 .gridMemb .membership-close:hover {
     cursor: pointer;
