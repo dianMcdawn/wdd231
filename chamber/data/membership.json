@@ -1,0 +1,33 @@
+{
+    "membership":
+        [
+            {
+                "id": 3,
+                "membershipName": "Gold",
+                "description": "CSE",
+                "credits": 2,
+                "completed": true
+            },
+            {
+                "id": 2,
+                "membershipName": "Silver",
+                "description": "CSE",
+                "credits": 2,
+                "completed": true
+            },
+            {
+                "id": 1,
+                "membershipName": "Bronze",
+                "description": "WDD",
+                "credits": 2,
+                "completed": true
+            },
+            {
+                "id": 0,
+                "membershipName": "NP",
+                "description": "For non profit organizations and there is no fee",
+                "credits": 2,
+                "completed": true
+            }
+        ]
+    }

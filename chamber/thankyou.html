@@ -29,9 +29,6 @@
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico">
     <script src="scripts/directory.js" defer></script>
-    <script src="scripts/weather.js" type="module"></script>
-    <script src="scripts/location.js" type="module"></script>
-    <script src="scripts/members-random.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -62,15 +59,19 @@
     </header>
     <main>
         <section class="hero">
-            <h2>JOIN</h2>
+            <h2>THANK YOU!!!</h2>
             <picture>
                 <source srcset="images/hero-main-1000.webp" media="(min-width: 1000px)">
                 <source srcset="images/hero-main-750.webp" media="(min-width: 750px)">
                 <img src="images/hero-main-500.webp" alt="Hero" width="500" height="250" loading="lazy">
             </picture>
         </section>
-
+        <section >
+            <p>You have succesfully submitted your form!</p>
+            <p id="reviews"></p>
+        </section>
     </main>
+    
     <footer>
         <div class="foot-section">
             <p>Chamber of Commerce</p>
@@ -91,6 +92,8 @@
             <p>Last Modification <span id="lastModified"></span></p>
         </div>
     </footer>
+    
+    <script src="scripts/thankyou.js" defer></script>
 </body>
 
 </html>

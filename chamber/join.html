@@ -29,9 +29,7 @@
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico">
     <script src="scripts/directory.js" defer></script>
-    <script src="scripts/weather.js" type="module"></script>
-    <script src="scripts/location.js" type="module"></script>
-    <script src="scripts/members-random.js" defer></script>
+    <script src="scripts/join.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -60,57 +58,67 @@
             <div id="icon">◐</div>
         </div>
     </header>
-    <main>
-        <section class="hero">
-            <h2>JOIN</h2>
-            <picture>
-                <source srcset="images/hero-main-1000.webp" media="(min-width: 1000px)">
-                <source srcset="images/hero-main-750.webp" media="(min-width: 750px)">
-                <img src="images/hero-main-500.webp" alt="Hero" width="500" height="250" loading="lazy">
-            </picture>
+    <main class="join-main">
+        <section class="join-hero">
+            <h2>JOIN US TODAY!</h2>
+            <p>With just a simple form submittion you can join our forces!!! Don't miss this opportunity</p>
         </section>
         <section class="form-section">
             <form action="thankyou.html" method="get">
                 <div class="form-element">
                     <label for="firstname" class="title-label">First name: </label>
-                    <input type="text" id="firstname" name="firstname" required>
+                    <input type="text" id="firstname" name="firstname" autocomplete="given-name" required>
                 </div>
                 <div class="form-element">
                     <label for="lastname" class="title-label">Last name: </label>
-                    <input type="text" id="lastname" name="lastname" required>
+                    <input type="text" id="lastname" name="lastname" autocomplete="family-name" required>
                 </div>
                 <div class="form-element">
                     <label for="organization" class="title-label">Organizational Title: </label>
-                    <input type="text" id="organization" name="organization" required>
+                    <input type="text" id="organization" name="organization" autocomplete="organization-title">
                 </div>
                 <div class="form-element">
                     <label for="email" class="title-label">email Address: </label>
-                    <input type="text" id="email" name="email" required>
+                    <input type="email" id="email" name="email" autocomplete="email" placeholder="yourname@domain.com" required>
                 </div>
                 <div class="form-element">
                     <label for="phone" class="title-label">Mobile Phone Number: </label>
-                    <input type="text" id="phone" name="phone" required>
+                    <input type="telephone" id="phone" name="phone" autocomplete="phone" required>
                 </div>
                 <div class="form-element">
                     <label for="business" class="title-label">Business/Organization's Name: </label>
-                    <input type="text" id="business" name="business" required>
+                    <input type="text" id="business" name="business" autocomplete="organization" required>
                 </div>
                 <div class="form-element">
-                    <label for="product" class="title-label">Membership Level: </label>
-                    <select id="product" name="product" required>
+                    <label for="membership" class="title-label">Membership Level: </label>
+                    <select id="membership" name="membership" required>
                         <option value="" selected disabled>Your choosing...</option>
+                        <option value="0">NP Membership</option>
+                        <option value="1">Bronze Membership</option>
+                        <option value="2">Silver Membership</option>
+                        <option value="3">Gold Membership</option>
                     </select>
                 </div>
                 <div class="form-element">
-                    <label for="review" class="title-label">Business/Organization Description <span class="optional">(Optional)</span>:
+                    <label for="description" class="title-label">Business/Organization Description <span class="optional">(Optional)</span>:
                     </label>
-                    <textarea id="review" name="review"></textarea>
+                    <textarea id="description" name="description"></textarea>
                 </div>
                 <input type="hidden" id="timestamp" name="timestamp">
                 <div class="form-submit">
                     <button type="submit">Join Us!</button>
                 </div>
             </form>
+        </section>
+        <section id="membership" class="gridMemb">
+            <h2 id="section-title">Memberships Cards</h2>
+            <dialog id="memberships-desc">
+                <div>
+                    <h2></h2>
+                    <p></p>
+                    <button id="dialog-close" class="membership-close">❌</button>
+                </div>
+            </dialog>
         </section>
     </main>
     <footer>

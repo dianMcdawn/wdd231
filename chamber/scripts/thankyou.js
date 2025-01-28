@@ -1,20 +1,36 @@
-// checking if a parameters arrives
-const urlParams = new URLSearchParams(window.location.search);
-const product = urlParams.get('firstname');
+// Variables declarations
+/*const urlParams = new URLSearchParams(window.location.search);
+const product = urlParams.get('firstname');*/
+const currentUrl = window.location.href;
+const showInfo = document.querySelector("#reviews");
 
-// Initialize display element variable, selecting an element by it style class
-const visitsDisplay = document.querySelector(".reviews");
+//Separating params from url
+const paramAndUrl = currentUrl.split('?');
+console.log(paramAndUrl);
 
-// Get the stored VALUE for the reviewsCount-ls KEY in localStorage if it exists. If the reviewsCount KEY is missing, then assign 0 to the reviewsCount variable.
-let reviewsCount = Number(window.localStorage.getItem("reviewsCount-ls")) || 0;
+//Separating each params
+let formParams = paramAndUrl[1].split('&');
+console.log(formParams);
 
-if (product !== null) {
-    // If submit is success increment the number of reviews by one.
-    reviewsCount++;
+//Function to show each element from submitted form on screen
+function showFormData(search){
+    formParams.forEach((param) => {
+        if (param.startsWith(search)){
+            result=param.split('=')[1].replace("%40","@");
+        }
+    })
+    return(result);
 }
 
-// Show the reviews count on screen
-visitsDisplay.textContent = reviewsCount;
+let resultHTML = `
+<p>Thank you ${showFormData("firstname")} ${showFormData("lastname")}, we received your submition on ${showFormData("timestamp")} we will send you to your email ${showFormData("email")} all the information about your ${showFormData("membership")} membership.
+We will also contact you to your phone number ${showFormData("phone")}.`;
 
-// Store the new visit total into localStorage, key=reviewsCount-ls
-localStorage.setItem("reviewsCount-ls", reviewsCount);
+if(showFormData("organization") !== "" || showFormData("business") !== "" || showFormData("description") !== "")
+{ resultHTML = resultHTML + `You also provided us te following information:</p>`;}
+
+if(showFormData("organization") !== "") {resultHTML = resultHTML + `<p>Organization Title: ${showFormData("organization")}</p>`;}
+if(showFormData("business") !== "") {resultHTML = resultHTML + `<p>Organization Name: ${showFormData("business")}</p>`;}
+if(showFormData("description") !== "") {resultHTML = resultHTML + `<p>Descriptione: ${showFormData("description")}</p>`;}
+
+showInfo.innerHTML = resultHTML;
