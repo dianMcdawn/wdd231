@@ -21,9 +21,14 @@ function showFormData(search){
     })
     return(result);
 }
+let memberlevel = '';
+if(showFormData("membership") == 0) {memberlevel = 'NP';}
+if(showFormData("membership") == 1) {memberlevel = 'Bronze';}
+if(showFormData("membership") == 2) {memberlevel = 'Silver';}
+if(showFormData("membership") == 3) {memberlevel = 'Gold';}
 
 let resultHTML = `
-<p>Thank you ${showFormData("firstname")} ${showFormData("lastname")}, we received your submition on ${showFormData("timestamp")} we will send you to your email ${showFormData("email")} all the information about your ${showFormData("membership")} membership.
+<p>Thank you ${showFormData("firstname")} ${showFormData("lastname")}, we received your submition on ${showFormData("timestamp")} we will send you to your email ${showFormData("email")} all the information about your ${memberlevel} membership.
 We will also contact you to your phone number ${showFormData("phone")}.`;
 
 if(showFormData("organization") !== "" || showFormData("business") !== "" || showFormData("description") !== "")
