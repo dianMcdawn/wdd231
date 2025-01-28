@@ -24,14 +24,21 @@ function showFormData(search){
     })
     return(result);
 }
+
+//Timestamp
+let subDate = showFormData("timestamp").split(' ')[0];
+let subStamp = showFormData("timestamp").split(' ')[1];
+
+//Membership
 let memberlevel = '';
 if(showFormData("memberlevel") == 0) {memberlevel = 'NP';}
 if(showFormData("memberlevel") == 1) {memberlevel = 'Bronze';}
 if(showFormData("memberlevel") == 2) {memberlevel = 'Silver';}
 if(showFormData("memberlevel") == 3) {memberlevel = 'Gold';}
 
+
 let resultHTML = `
-<p>Thank you ${showFormData("firstname")} ${showFormData("lastname")}, we received your submition on ${showFormData("timestamp")} we will send you to your email ${showFormData("email")} all the information about your ${memberlevel} membership.
+<p>Thank you <strong>${showFormData("firstname")} ${showFormData("lastname")}</strong>, we received your submition on ${subDate}, at ${subStamp} hr. We will send you to your email ${showFormData("email")} all the information about your ${memberlevel} membership.
 We will also contact you to your phone number ${showFormData("phone")}.`;
 
 if(showFormData("organization") !== "" || showFormData("business") !== "" || showFormData("description") !== "")
