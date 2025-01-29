@@ -6,28 +6,68 @@
                 "membershipName": "Gold",
                 "description": "CSE",
                 "credits": 2,
-                "completed": true
+                "benefits": [
+                    {
+                        "benefitName": "Discount",
+                        "value":"50% on any item"
+                    },
+                    {
+                        "benefitName": "Access to events",
+                        "value":"Full access to all of our events"
+                    },
+                    {
+                        "benefitName": "Distinction",
+                        "value":"Recevie a certification and credential to access to any of our installations over the world"
+                    }
+                ]
             },
             {
                 "id": 2,
                 "membershipName": "Silver",
                 "description": "CSE",
                 "credits": 2,
-                "completed": true
+                "benefits": [
+                    {
+                        "benefitName": "Discount",
+                        "value":"25% on any item"
+                    },
+                    {
+                        "benefitName": "Access to events",
+                        "value":"Access to all regular events"
+                    }
+                ]
             },
             {
                 "id": 1,
                 "membershipName": "Bronze",
                 "description": "WDD",
                 "credits": 2,
-                "completed": true
+                "benefits": [
+                    {
+                        "benefitName": "Discount",
+                        "value":"5% on any item"
+                    },
+                    {
+                        "benefitName": "Access to events",
+                        "value":"Access to one regular event per month"
+                    }
+                ]
             },
             {
                 "id": 0,
                 "membershipName": "NP",
                 "description": "For non profit organizations and there is no fee",
                 "credits": 2,
-                "completed": true
+                "benefits": [
+                    {
+                        "benefitName": "Discount",
+                        "value":"10% on any item"
+                    },
+                    {
+                        "benefitName": "Distinction",
+                        "value":"Recevie a credential to access to any of our installations over the world"
+                    }
+                ]
             }
         ]
     }

@@ -29,7 +29,8 @@ getMembershipData();
 const membershipCards = document.querySelector('#membership');
 const membershipDetails = document.querySelector('#membership-desc');
 const membershipDetailsTitle = document.querySelector('#membership-desc h2');
-const membershipDetailsInfo = document.querySelector('#membership-desc p');
+const membershipDetailsInfo = document.querySelector('#membership-desc #membership-desc');
+const membershipDetailsBenefit = document.querySelector('#membership-desc #membership-benefit');
 const membershipDetailsClose = document.querySelector('#membership-desc #dialog-close');
 membershipDetailsClose.addEventListener("click", () => membershipDetails.close())
 
@@ -56,6 +57,12 @@ function displayItems(data) {
 function showStuff(x) {
     membershipDetailsTitle.innerHTML = `${x.membershipName} Membership`;
     membershipDetailsInfo.innerHTML = x.description;
+    membershipDetailsBenefit.innerHTML = "";
+    x.benefits.forEach(k => {
+        let benefit = document.createElement('p');
+        benefit.textContent = `${k.benefitName}: ${k.value}`;
+        membershipDetailsBenefit.appendChild(benefit);
+    })
     membershipDetails.showModal();
 }
 

@@ -2,7 +2,7 @@
 /*const urlParams = new URLSearchParams(window.location.search);
 const product = urlParams.get('firstname');*/
 const currentUrl = window.location.href;
-const showInfo = document.querySelector("#reviews");
+const showInfo = document.querySelector("#submittion");
 
 //Separating params from url
 const paramAndUrl = currentUrl.split('?');
@@ -20,6 +20,7 @@ function showFormData(search){
             result=result.replace("+"," ");
             result=result.replace("%3A",":");
             result=result.replace("%3A",":");
+            result=result.replace("%2B","+");
         }
     })
     return(result);
@@ -38,8 +39,10 @@ if(showFormData("memberlevel") == 3) {memberlevel = 'Gold';}
 
 
 let resultHTML = `
-<p>Thank you <strong>${showFormData("firstname")} ${showFormData("lastname")}</strong>, we received your submition on ${subDate}, at ${subStamp} hr. We will send you to your email ${showFormData("email")} all the information about your ${memberlevel} membership.
-We will also contact you to your phone number ${showFormData("phone")}.`;
+<span>Dear ${showFormData("firstname")} ${showFormData("lastname")},</span>
+<p>Thank you for submitting your information, we received your submition on ${subDate}, at ${subStamp} hr.</p>
+<p>We will send you to your email ${showFormData("email")} all the information about your ${memberlevel} membership.
+We will also contact you to your phone number ${showFormData("phone")}.</p>`;
 
 if(showFormData("organization") !== "" || showFormData("business") !== "" || showFormData("description") !== "")
 { resultHTML = resultHTML + `You also provided us te following information:</p>`;}
