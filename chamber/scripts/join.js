@@ -29,7 +29,7 @@ getMembershipData();
 const membershipCards = document.querySelector('#membership');
 const membershipDetails = document.querySelector('#membership-desc');
 const membershipDetailsTitle = document.querySelector('#membership-desc h2');
-const membershipDetailsInfo = document.querySelector('#membership-desc #membership-desc');
+const membershipDetailsInfo = document.querySelector('#membership-desc #membership-description');
 const membershipDetailsBenefit = document.querySelector('#membership-desc #membership-benefit');
 const membershipDetailsClose = document.querySelector('#membership-desc #dialog-close');
 membershipDetailsClose.addEventListener("click", () => membershipDetails.close())
