@@ -88,6 +88,11 @@
     .gridPlaces .places-section p{
         padding: 0 1rem;
     }
+    .gridPlaces .places-section figure img:hover{
+        width: 120%;
+        z-index: 99;
+        transition: width 0.5s;
+    }
 
     /* ************************************ */
     footer {

@@ -51,7 +51,7 @@ function displayItems(data) {
         address.textContent = `${x.address}`;
 
         let buttonRead = document.createElement('button');
-        buttonRead.textContent = `Read more`;
+        buttonRead.textContent = `Learn more`;
         buttonRead.classList.add("places-link");
         buttonRead.addEventListener('click', () => showStuff(x));
 
