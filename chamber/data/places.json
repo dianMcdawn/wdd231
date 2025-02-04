@@ -1,0 +1,61 @@
+{
+    "places":
+        [
+            {
+                "id": 1,
+                "name": "Casona Eastman",
+                "address": "1905 Grant View Drive, New Berlin, WI",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "imageurl": "images/limache/limache-casa-eastman.webp"
+            },
+            {
+                "id": 2,
+                "name": "Fabrica CCU",
+                "address": "1905 Grant View Drive, New Berlin, WI",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "imageurl": "images/limache/limache-fabrica-ccu.webp"
+            },
+            {
+                "id": 3,
+                "name": "Parque Brasil",
+                "address": "1905 Grant View Drive, New Berlin, WI",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "imageurl": "images/limache/limache-parque-brasil.webp"
+            },
+            {
+                "id": 4,
+                "name": "Parque China",
+                "address": "1905 Grant View Drive, New Berlin, WI",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "imageurl": "images/limache/limache-parque-china.webp"
+            },
+            {
+                "id": 5,
+                "name": "Plaza 40 horas",
+                "address": "1905 Grant View Drive, New Berlin, WI",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "imageurl": "images/limache/limache-plaza-40-horas.webp"
+            },
+            {
+                "id": 6,
+                "name": "Renamu Piedras Blancas",
+                "address": "1905 Grant View Drive, New Berlin, WI",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "imageurl": "images/limache/limache-renamu-piedras-blancas.webp"
+            },
+            {
+                "id": 7,
+                "name": "Tren del Recuerdo",
+                "address": "1905 Grant View Drive, New Berlin, WI",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "imageurl": "images/limache/limache-tren-del-recuerdo.webp"
+            },
+            {
+                "id": 8,
+                "name": "Ciclismo Turistico",
+                "address": "1905 Grant View Drive, New Berlin, WI",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "imageurl": "images/limache/limache-ciclismo.webp"
+            }
+        ]
+}

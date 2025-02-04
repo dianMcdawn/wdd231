@@ -8,6 +8,7 @@
     <meta name="author" content="Patricio Henriquez">
     <title>WDD 231 | Basic Layout</title>
     <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/directory-medium.css">
     <link rel="stylesheet" href="styles/directory-large.css">
 
     <!--  Essential META Tags - Open Graph protocol -->
@@ -29,9 +30,7 @@
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico">
     <script src="scripts/directory.js" defer></script>
-    <script src="scripts/weather.js" type="module"></script>
-    <script src="scripts/location.js" type="module"></script>
-    <script src="scripts/members-random.js" defer></script>
+    <script src="scripts/places.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -60,16 +59,19 @@
             <div id="icon">◐</div>
         </div>
     </header>
-    <main>
-        <section class="hero">
+    <main class="discover-main">
+        <section class="discover-hero">
             <h2>DISCOVER</h2>
-            <picture>
-                <source srcset="images/hero-main-1000.webp" media="(min-width: 1000px)">
-                <source srcset="images/hero-main-750.webp" media="(min-width: 750px)">
-                <img src="images/hero-main-500.webp" alt="Hero" width="500" height="250" loading="lazy">
-            </picture>
         </section>
-        
+        <section id="places" class="gridPlaces">
+            <dialog id="places-dialog-desc">
+                <div>
+                    <h2 id="places-dialog-title">Named Places</h2>
+                    <p id="places-dialog-description"></p>
+                    <button id="places-dialog-close" class="places-close">❌</button>
+                </div>
+            </dialog>
+        </section>
     </main>
     <footer>
         <div class="foot-section">

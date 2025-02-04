@@ -1,4 +1,4 @@
-@media screen and (min-width: 850px){
+@media screen and (min-width: 1024px){
     body {
         padding: 0 10% 0 10%;
         margin: 0;
@@ -70,6 +70,23 @@
 
     .gridMemb .membership-section .membership-link{
         padding: .6rem 0;
+    }
+
+    /* ************************************ */
+
+    .gridPlaces .places-section{
+        grid-template-areas:
+        "photograph name"
+        "photograph description"
+        "photograph location"
+        "photograph button";
+    }
+    .gridPlaces .places-section figure img{
+        width: 100%;
+        border-radius: 10px 0 0 0;
+    }
+    .gridPlaces .places-section p{
+        padding: 0 1rem;
     }
 
     /* ************************************ */
