@@ -57,13 +57,13 @@ else if (diff >= msToDays) {
     let daysDiff = diff / (1000 * 60 * 60 * 24);
     message = `You last visited ${daysDiff} days ago.`;
 }
-message = message + ` ${diff}`;
+message = message;
 
 //Visita
 visitCount++;
 
 // Show the reviews count on screen
-guestDisplay.textContent = `${message} ${visitCount}`;
+guestDisplay.textContent = `${message}`;
 
 // Store the new visit total into localStorage, key=emailsCount-ls
 localStorage.setItem("lastVisit-ls", now);
