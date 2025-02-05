@@ -851,9 +851,10 @@ footer P {
     from {
         opacity: 0.9;
     }
-
     to {
+        
         opacity: 0;
+        z-index: -1;
     }
 }
 
