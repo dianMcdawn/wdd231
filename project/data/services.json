@@ -3,75 +3,123 @@
         [
             {
                 "id":0,
-                "serviceName": "Web Page",
-                "description": "I help you to desing, build and upload your personal or commercial web site",
-                "category": "Web",
+                "serviceName": "Website Design",
+                "description": "Creating visually appealing and user-friendly websites.",
+                "category": "Web Development",
                 "type": "Simple",
                 "cost": 500
             },
             {
                 "id":1,
-                "serviceName": "Web Software",
-                "description": "Let's transform your site into a proffessional site to manage your company",
-                "category": "Web",
+                "serviceName": "SEO Optimization",
+                "description": "Improving website ranking on search engines through optimization.",
+                "category": "Digital Marketing",
                 "type": "Advanced",
-                "cost": 2000
+                "cost": 300
             },
             {
                 "id":2,
-                "serviceName": "Web Full Desing and Implementation",
-                "description": "Building an entire web site wich works as a normal site, as a company softre and you can connect with any state service.",
-                "category": "Web",
+                "serviceName": "Social Media Management",
+                "description": "Managing and growing social media accounts for businesses.",
+                "category": "Social Media",
                 "type": "Full",
-                "cost": 5000
+                "cost": 200
             },
             {
                 "id":3,
-                "serviceName": "Web Hosting",
-                "description": "Help you fin perfect hosting services",
-                "category": "Hosting",
+                "serviceName": "Logo & Branding Design",
+                "description": "Designing logos, business cards, and brand identity.",
+                "category": "Graphic Design",
                 "type": "Simple",
-                "cost": 100
+                "cost": 150
             },
             {
                 "id":4,
-                "serviceName": "Hosting for many services",
-                "description": "Help you find the bes option for all your projects",
-                "category": "Hosting",
+                "serviceName": "Copywriting & Blog Writing",
+                "description": "Writing engaging content, blogs, and website copy.",
+                "category": "Content Creation",
                 "type": "Advanced",
-                "cost": 2000
+                "cost": 50
             },
             {
                 "id":5,
-                "serviceName": "Full Hosting",
-                "description": "Transform your hosting into a plataform where you can manage everything.",
-                "category": "Hosting",
+                "serviceName": "Video Editing",
+                "description": "Editing videos for businesses, YouTubers, and social media.",
+                "category": "Multimedia",
                 "type": "Full",
-                "cost": 5000
-            },
-            {
-                "id":6,
-                "serviceName": "Simple Database",
-                "description": "Help you understand and create simple database",
-                "category": "Database",
-                "type": "Simple",
                 "cost": 100
             },
             {
+                "id":6,
+                "serviceName": "E-commerce Store Setup",
+                "description": "Setting up Shopify, WooCommerce, or custom e-commerce stores.",
+                "category": "E-commerce",
+                "type": "Simple",
+                "cost": 500
+            },
+            {
                 "id":7,
-                "serviceName": "Control Database",
-                "description": "You rceive Database intruction and help you to manage your DB in the best ways",
-                "category": "Database",
+                "serviceName": "Email Marketing",
+                "description": "Creating and managing email campaigns for businesses.",
+                "category": "Digital Marketing",
                 "type": "Advanced",
-                "cost": 2000
+                "cost": 250
             },
             {
                 "id":8,
-                "serviceName": "Full Database Manager",
-                "description": "You will be prepared to take control of your databases, and a team will work for you for a short time to handle any problem.",
-                "category": "Database",
+                "serviceName": "Mobile App Development",
+                "description": "Building mobile apps for iOS and Android.",
+                "category": "App Development",
                 "type": "Full",
                 "cost": 5000
+            },
+            {
+                "id":9,
+                "serviceName": "Data Entry & Virtual Assistance",
+                "description": "Managing administrative tasks, data entry, and scheduling.",
+                "category": "Virtual Assistance",
+                "type": "Simple",
+                "cost": 50
+            },
+            {
+                "id":10,
+                "serviceName": "Google Ads Management",
+                "description": "Running and optimizing Google Ads campaigns.",
+                "category": "Advertising",
+                "type": "Advanced",
+                "cost": 300
+            },
+            {
+                "id":11,
+                "serviceName": "Web Hosting & Maintenance",
+                "description": "Hosting websites and providing ongoing updates and security.",
+                "category": "Web Services",
+                "type": "Full",
+                "cost": 200
+            },
+            {
+                "id":12,
+                "serviceName": "Custom Software Development",
+                "description": "Developing tailored software solutions for businesses.",
+                "category": "Software Dev",
+                "type": "Simple",
+                "cost": 5000
+            },
+            {
+                "id":13,
+                "serviceName": "Voiceover & Podcast Editing",
+                "description": "Providing professional voiceovers and audio editing.",
+                "category": "Multimedia",
+                "type": "Advanced",
+                "cost": 1500
+            },
+            {
+                "id":14,
+                "serviceName": "UI/UX Design Consulting",
+                "description": "Enhancing user experience and interface design for apps/websites.",
+                "category": "Design",
+                "type": "Full",
+                "cost": 10000
             }
         ]
 }

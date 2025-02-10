@@ -101,7 +101,13 @@ function renderFullServices(services) {
 }
 
 //Showing results of array
-getServicesData(1);
+try {
+    getServicesData(1);
+  } catch (error) {
+    console.error(error);
+    // Expected output: ReferenceError: nonExistentFunction is not defined
+    // (Note: the exact output may be browser-dependent)
+}
 
 //Some actions
 
