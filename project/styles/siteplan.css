@@ -106,7 +106,7 @@ header h2 {
 }
 
 #menu.show::before {
-    content: "X";
+    content: "❌";
 }
 
 .show li {

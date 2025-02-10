@@ -4,16 +4,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta name="description" content="P.A.H.M. Tech - Digital solutions - Sended">
+    <meta name="description" content="P.A.H.M. Tech - Digital solutions - About">
     <meta name="author" content="Patricio Henriquez">
-    <title>P.A.H.M. Tech - Digital solutions</title>
+    <title>P.A.H.M. Tech - About Us</title>
     <link rel="stylesheet" href="styles/siteplan.css">
     <link rel="stylesheet" href="styles/siteplan-large.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.webp">
     <script src="scripts/getdates.js" defer></script>
 
     <!--  Essential META Tags - Open Graph protocol -->
-    <meta property="og:title" content="P.A.H.M. Tech - Digital solutions - Sended">
+    <meta property="og:title" content="P.A.H.M. Tech - Digital solutions - About">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://dianmcdawn.github.io/wdd231/project/images/chile.webp">
     <meta property="og:url" content="https://dianmcdawn.github.io/wdd231/project/about.html">
@@ -21,7 +21,7 @@
 
     <!--  Non-Essential, But Recommended -->
     <meta property="og:description" content="Improving desings">
-    <meta property="og:site_name" content="P.A.H.M. Tech - Digital solutions - Sended">
+    <meta property="og:site_name" content="P.A.H.M. Tech - Digital solutions - About">
     <meta name="twitter:image:alt" content="Chile Flag">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,24 +38,47 @@
             <ul class="navigation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About me</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="https://www.linkedin.com/in/patricio-a-henriquez-66701a214/" target="_blank">LinkedIn</a></li>
-                <li><a href="#">My Site Plan</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="https://www.linkedin.com/in/patricio-a-henriquez-66701a214/" target="_blank">LinkedIn</a>
+                </li>
+                <li><a href="siteplan.html">My Site Plan</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Reviews</h2>
-        <div class="main-content">
-            <span class="label">Number of emails: </span><span class="emails"></span>
-            <a href="index.html" class="button">Return home</a>
+        <div class="hero-image">
+            <h2>All Services</h2>
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 750px)">
+                <img src="images/hero-small.webp" alt="Technology" width="500" height="250" loading="lazy">
+            </picture>
+        </div>
+        <div class="services-section">
+            <h2>All Services</h2>
+            <div class="services-filter">
+                <p id="all">All</p>
+                <p id="simples">Simples</p>
+                <p id="advanced">Advanced</p>
+                <p id="full">Full</p>
+            </div>
+            <div id="services" class="services"></div>
+            <div id="services-dialog" class="services">
+                <dialog id="services-info">
+                    <h2>Service Name</h2>
+                    <p id="services-description"></p>
+                    <button id="dialog-close" class="services-close">❌</button>
+                </dialog>
+            </div>
         </div>
     </main>
+
     <footer>
         <p>@<span id="currentyear"></span> 🐠 Talcahuano, Chile 🐠 | 🦆 Patricio Henriquez 🦆</p>
         <p>Last Modification <span id="lastModified"></span></p>
     </footer>
-    <script src="scripts/send.js" defer></script>
+    <script src="scripts/siteplan.js" defer></script>
+    <script src="scripts/services.js" defer></script>
 </body>
 
 </html>
