@@ -9,8 +9,10 @@
     <title>P.A.H.M. Tech - Digital solutions</title>
     <link rel="stylesheet" href="styles/siteplan.css">
     <link rel="stylesheet" href="styles/siteplan-large.css">
-    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="icon" type="image/x-icon" href="images/favicon.webp">
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/siteplan.js" defer></script>
+    <script src="scripts/services.js" defer></script>
 
     <!--  Essential META Tags - Open Graph protocol -->
     <meta property="og:title" content="P.A.H.M. Tech - Digital solutions">
@@ -61,6 +63,13 @@
                 <p id="full">Full</p>
             </div>
             <div id="services" class="services"></div>
+            <div id="services-dialog" class="services">
+                <dialog id="services-info">
+                    <h2>Service Name</h2>
+                    <p id="services-description"></p>
+                    <button id="dialog-close" class="services-close">❌</button>
+                </dialog>
+            </div>
         </div>
         <div class="contact">
             <h2>Contact me</h2>
@@ -99,8 +108,6 @@
         <p>@<span id="currentyear"></span> 🐠 Talcahuano, Chile 🐠 | 🦆 Patricio Henriquez 🦆</p>
         <p>Last Modification <span id="lastModified"></span></p>
     </footer>
-    <script src="scripts/siteplan.js" defer></script>
-    <script src="scripts/services.js" defer></script>
 </body>
 
 </html>

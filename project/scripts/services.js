@@ -1,7 +1,15 @@
 // Store the selected elements that we are going to use.
 const mainnav = document.querySelector('.navigation')
 const hambutton = document.querySelector('#menu');
-const album = document.querySelector('#services');
+
+//Services div and dialog
+const services = document.querySelector('#services');
+const servicesDetails = document.querySelector('#services-info');
+const servicesDetailsTitle = document.querySelector('#services-info h2');
+const servicesDetailsInfo = document.querySelector('#services-info #services-description');
+const servicesDetailsClose = document.querySelector('#services-info #dialog-close');
+servicesDetailsClose.addEventListener("click", () => servicesDetails.close())
+
 //Some Navigations const
 const all = document.querySelector('#all');
 const simples = document.querySelector('#simples');
@@ -14,133 +22,112 @@ hambutton.addEventListener('click', () => {
     hambutton.classList.toggle('show');
 });
 
-//Constant of service
-const services = [
-    {
-        serviceName: "Web Page",
-        description: "I help you to desing, build and upload your personal or commercial web site",
-        category: "Web",
-        type: "Simple",
-        cost: 500
-    },
-    {
-        serviceName: "Web Software",
-        description: "Let's transform your site into a proffessional site to manage your company",
-        category: "Web",
-        type: "Advanced",
-        cost: 2000
-    },
-    {
-        serviceName: "Web Full Desing and Implementation",
-        description: "Building an entire web site wich works as a normal site, as a company softre and you can connect with any state service.",
-        category: "Web",
-        type: "Full",
-        cost: 5000
-    },
-    {
-        serviceName: "Web Hosting",
-        description: "Help you fin perfect hosting services",
-        category: "Hosting",
-        type: "Simple",
-        cost: 100
-    },
-    {
-        serviceName: "Hosting for many services",
-        description: "Help you find the bes option for all your projects",
-        category: "Hosting",
-        type: "Advanced",
-        cost: 2000
-    },
-    {
-        serviceName: "Full Hosting",
-        description: "Transform your hosting into a plataform where you can manage everything.",
-        category: "Hosting",
-        type: "Full",
-        cost: 5000
-    },
-    {
-        serviceName: "Simple Database",
-        description: "Help you understand and create simple database",
-        category: "Database",
-        type: "Simple",
-        cost: 100
-    },
-    {
-        serviceName: "Control Database",
-        description: "You rceive Database intruction and help you to manage your DB in the best ways",
-        category: "Database",
-        type: "Advanced",
-        cost: 2000
-    },
-    {
-        serviceName: "Full Database Manager",
-        description: "You will be prepared to take control of your databases, and a team will work for you for a short time to handle any problem.",
-        category: "Database",
-        type: "Full",
-        cost: 5000
-    }
-];
+/* *********************** */
+
+//Fetching JSON to be displayed
+const url = 'data/services.json';
+
+async function getServicesData(option) {
+	const response = await fetch(url);
+	const data = await response.json();
+
+    if(option == 1) {renderAllservices(data.services);}
+    if(option == 2) {renderSimpleServices(data.services);}
+    if(option == 3) {renderAdvancedServices(data.services);}
+    if(option == 4) {renderFullServices(data.services);}
+}
 
 //Function to template a service
-function serviceCard(service) {
-    return `<div class="service">
-	  <div class="service-element service-title">${service.serviceName}</div>
-	  <div class="service-element"><span class="service-desc">${service.description}</span></div>
-	  <div class="service-element"><span class="service-desc">${service.category}</span></div>
-	  <div class="service-element"><span class="service-desc">${service.type}</span></div>
-      <div class="service-element"><span class="service-desc">${service.cost} $USD</span></div>
-	  </div>`
+function displayService(data) {
+    services.innerHTML = "";
+    data.forEach(service => {
+        let card = document.createElement('div');
+        card.classList.add("service");
+        card.setAttribute("id", `${service.id}`);
+        let cardTitle = document.createElement('div');
+        cardTitle.classList.add("service-element");
+        cardTitle.classList.add("service-title");
+        cardTitle.textContent = `${service.serviceName}`;
+        
+        let cardCat = document.createElement('div');
+        cardCat.classList.add("service-element");
+        cardCat.classList.add("service-desc");
+        cardCat.textContent = `Category: ${service.category}`;
+        let cardType = document.createElement('div');
+        cardType.classList.add("service-element");
+        cardType.classList.add("service-desc");
+        cardType.textContent = `Pack: ${service.type}`;
+        let cardCost = document.createElement('div');
+        cardCost.classList.add("service-element");
+        cardCost.classList.add("service-desc");
+        cardCost.textContent = `Cost: $${service.cost} CLP`;
+
+        let buttonRead = document.createElement('button');
+        buttonRead.textContent = `Read more`;
+        buttonRead.classList.add("service-link");
+        buttonRead.addEventListener('click', () => showStuff(service));
+
+        //Appending data to main cards
+        card.appendChild(cardTitle);
+        card.appendChild(cardCat);
+        card.appendChild(cardType);
+        card.appendChild(cardCost);
+        card.appendChild(buttonRead);
+        services.appendChild(card);
+    })
 }
 
 //Templating all service
 function renderAllservices(services) {
-    const html = services.map(serviceCard);
-    album.innerHTML = html.join("");
+    displayService(services);
 }
 
 //showing all simple services
 function renderSimpleServices(services) {
 	let list = services.filter(function (dat) { return dat.type == 'Simple'; });
-	const html = list.map(serviceCard);
-	album.innerHTML = html.join("");
+    displayService(list);
 }
 
 //showing all simple services
 function renderAdvancedServices(services) {
 	let list = services.filter(function (dat) { return dat.type == 'Advanced'; });
-	const html = list.map(serviceCard);
-	album.innerHTML = html.join("");
+    displayService(list);
 }
 
 //showing all simple services
 function renderFullServices(services) {
 	let list = services.filter(function (dat) { return dat.type == 'Full'; });
-	const html = list.map(serviceCard);
-	album.innerHTML = html.join("");
+    displayService(list);
 }
 
 //Showing results of array
-renderAllservices(services);
+getServicesData(1);
 
 //Some actions
 
 //Show all temples
 all.addEventListener('click', function () {
     // Code to execute when the button is clicked
-    renderAllservices(services);
+    getServicesData(1);
 });
 
 simples.addEventListener('click', function () {
     // Code to execute when the button is clicked
-    renderSimpleServices(services);
+    getServicesData(2);
 });
 
 advanced.addEventListener('click', function () {
     // Code to execute when the button is clicked
-    renderAdvancedServices(services);
+    getServicesData(3);
 });
 
 full.addEventListener('click', function () {
     // Code to execute when the button is clicked
-    renderFullServices(services);
+    getServicesData(4);
 });
+
+function showStuff(service) {
+    servicesDetailsTitle.innerHTML = `${service.serviceName}`;
+    servicesDetailsInfo.innerHTML = `Description: ${service.description}`;
+    servicesDetails.showModal();
+}

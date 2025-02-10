@@ -1,0 +1,77 @@
+{
+    "services":
+        [
+            {
+                "id":0,
+                "serviceName": "Web Page",
+                "description": "I help you to desing, build and upload your personal or commercial web site",
+                "category": "Web",
+                "type": "Simple",
+                "cost": 500
+            },
+            {
+                "id":1,
+                "serviceName": "Web Software",
+                "description": "Let's transform your site into a proffessional site to manage your company",
+                "category": "Web",
+                "type": "Advanced",
+                "cost": 2000
+            },
+            {
+                "id":2,
+                "serviceName": "Web Full Desing and Implementation",
+                "description": "Building an entire web site wich works as a normal site, as a company softre and you can connect with any state service.",
+                "category": "Web",
+                "type": "Full",
+                "cost": 5000
+            },
+            {
+                "id":3,
+                "serviceName": "Web Hosting",
+                "description": "Help you fin perfect hosting services",
+                "category": "Hosting",
+                "type": "Simple",
+                "cost": 100
+            },
+            {
+                "id":4,
+                "serviceName": "Hosting for many services",
+                "description": "Help you find the bes option for all your projects",
+                "category": "Hosting",
+                "type": "Advanced",
+                "cost": 2000
+            },
+            {
+                "id":5,
+                "serviceName": "Full Hosting",
+                "description": "Transform your hosting into a plataform where you can manage everything.",
+                "category": "Hosting",
+                "type": "Full",
+                "cost": 5000
+            },
+            {
+                "id":6,
+                "serviceName": "Simple Database",
+                "description": "Help you understand and create simple database",
+                "category": "Database",
+                "type": "Simple",
+                "cost": 100
+            },
+            {
+                "id":7,
+                "serviceName": "Control Database",
+                "description": "You rceive Database intruction and help you to manage your DB in the best ways",
+                "category": "Database",
+                "type": "Advanced",
+                "cost": 2000
+            },
+            {
+                "id":8,
+                "serviceName": "Full Database Manager",
+                "description": "You will be prepared to take control of your databases, and a team will work for you for a short time to handle any problem.",
+                "category": "Database",
+                "type": "Full",
+                "cost": 5000
+            }
+        ]
+}
