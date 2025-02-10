@@ -98,6 +98,7 @@ header h2 {
     text-decoration: none;
     text-align: right;
     padding: 0 1rem 0 0;
+    cursor: pointer;
 }
 
 #menu::before {

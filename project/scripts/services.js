@@ -1,7 +1,3 @@
-// Store the selected elements that we are going to use.
-const mainnav = document.querySelector('.navigation')
-const hambutton = document.querySelector('#menu');
-
 //Services div and dialog
 const services = document.querySelector('#services');
 const servicesDetails = document.querySelector('#services-info');
@@ -15,12 +11,6 @@ const all = document.querySelector('#all');
 const simples = document.querySelector('#simples');
 const advanced = document.querySelector('#advanced');
 const full = document.querySelector('#full');
-
-// Add a click event listender to the hamburger button and use a callback function that toggles the list element's list of classes.
-hambutton.addEventListener('click', () => {
-    mainnav.classList.toggle('show');
-    hambutton.classList.toggle('show');
-});
 
 /* *********************** */
 
